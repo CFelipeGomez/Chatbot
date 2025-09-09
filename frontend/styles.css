@@ -1,0 +1,119 @@
+/* Fondo general */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.chat-container {
+  background: #ffffff;
+  width: 400px;
+  height: 600px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+/* Título */
+.chat-container h2 {
+  margin: 0;
+  padding: 12px;
+  background: #203a43;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Caja del chat */
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Scroll bonito */
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Mensajes */
+.message {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  line-height: 1.4;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+/* Mensajes de usuario */
+.message.user {
+  background: #4cafef;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+/* Mensajes del bot */
+.message.bot {
+  background: #e6e6e6;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+/* Listas dentro de mensajes */
+.message.bot ul {
+  padding-left: 20px;
+  margin: 8px 0 0;
+}
+.message.bot li {
+  margin-bottom: 4px;
+}
+
+/* Input y botón */
+.input-container {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+#user-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+#send-btn {
+  background: #203a43;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+#send-btn:hover {
+  background: #2c5364;
+}

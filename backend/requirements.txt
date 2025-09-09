@@ -1,0 +1,9 @@
+# Framework del servidor web
+Flask==2.3.2  
+
+# Procesamiento de Lenguaje Natural
+nltk==3.8.1  
+
+# Para manejar peticiones HTTP
+requests==2.31.0  
+
