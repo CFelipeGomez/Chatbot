@@ -32,15 +32,25 @@ El chatbot es capaz de mantener el contexto de la conversación, detectar prefer
 
 ## Estructura del Proyecto
 Directory structure:
+
 └── cfelipegomez-chatbot/
+
     ├── backend/
+    
     │   ├── app.py
+    
     │   ├── nlp_model.py
+    
     │   ├── recommender.py
+    
     │   └── requirements.txt
+    
     └── frontend/
+    
         ├── index.html
+        
         ├── script.js
+        
         └── styles.css
 
 
